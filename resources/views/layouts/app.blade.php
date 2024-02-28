@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog</title>
+  <title>La Primera</title>
   <!-- Styles -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -13,11 +13,12 @@
 <!-- Navbar -->
 <header>
   <nav class="navbar bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="{{ route('posts.index') }}">Mini-Blog</a>
+    <div class="container-fluid d-flex justify-content-center font-weight-bold">
+      <a class="navbar-brand" href="{{ route('posts.index') }}">Un Blog De Futbol Chilena</a>
     </div>
   </nav>
 </header>
+
 
 <!-- Body -->
 <body>
@@ -27,7 +28,7 @@
 <!-- Footer -->
 <footer class="footer mt-auto py-3 bg-dark">
   <div class="container d-lg-flex justify-content-between">
-    <span class="text-light">Mini-Blog © 2023</span>
+    <span class="text-light">Un fanatico de futbol</span>
   </div>
 </footer>
 
