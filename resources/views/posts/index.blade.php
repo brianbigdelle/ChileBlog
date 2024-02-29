@@ -5,7 +5,9 @@
   <div class="row">
     <div class="col-md-8"> <!-- Blog Content Column -->
       <div class="titlebar">
+        @can('admin-only',Auth::user())
         <a class="btn btn-secondary float-end mt-3" href="{{ route('posts.create') }}" role="button">Add Post</a>
+        @endcan
         <h1>Pensamientos</h1>
       </div>
       <hr>
@@ -43,8 +45,8 @@
           <h5 class="card-title d-flex justify-content-center">Semana 2</h5>
           <table class="table">
             <tr>
-                <td>Club</td>
-                <td>Puntos</td>
+                <td><b>Club</b></td>
+                <td><b>Puntos</b></td>
             </tr>
             <tr>
                 <td>O'Higgins</td>
